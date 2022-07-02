@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: 1s ease;
+}
+
+section.body {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+section.body header {
+  max-height: 30vh;
+  padding: 1rem;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+  animation: close 1s linear 1;
+}
+
+@keyframes close {
+  0% {
+    padding: 1rem 0;
+  }
+  100% {
+    padding: 1rem;
+  }
+}
+
+header .logo {
+  height: 100%;
+  max-width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo .logo-icon {
+  margin-right: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.logo .logo-branding {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+header .ul-icon {
+  max-width: 30%;
+  height: 100%;
+  font-size: 1.7rem;
+  z-index: 9;
+}
+
+
+.body main {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  /*color: #973838;*/
+  color: rgba(255,255,255,0.5);
+  min-height: 50%;
+  margin: 5rem auto;
+  width: 80%;
+  text-align: center;
+  animation: display 3s ease 1;
+  z-index: 5;
+}
+
+@keyframes display {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main .title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main .title i{
+  font-size: 1.7rem;
+}
+
+main .button {
+  margin: 1rem 0;
+}
+
+.button .start-btn {
+  border: 1px solid rgba(255,255,255,0.5);
+  min-width: 7rem;
+  padding: 0.5rem 0;
+  background: transparent;
+  color: rgba(255,255,255,0.5);
+  border-radius: 0.2rem;
+  animation: display 8s ease 1;
+}
+
+main .user-data {
+  margin-top: 1rem;
+  transition: 1.5s ease;
+  padding: 0.5rem;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.user-data p {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.user-data .input-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-field input {
+  width: 72%;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  background: #ccc;
+  padding: 0.4rem;
+}
+
+.input-field button{
+  width: 24%;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.5);
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  background: transparent;
+}
+
+section.nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  min-height: 100vh;
+  min-width: 70%;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgba(255,255,255,0.5);
+  transform: scaleX(0);
+  transition: 1s ease;
+}
+
+section.nav nav {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+nav .fa-x {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+nav button {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.5);
+  margin-left: 0.6rem;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+nav button i {
+  transition: 0.5s ease;
+}
+
+nav ul li {
+  list-style: none;
+  display: block;
+}
+
+nav .dropdown {
+  position: relative;
+  transition: 1s ease;
+}
+
+nav .second {
+  margin-top: 5rem;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+nav ul li a i {
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+}
+
+nav .dropdown-content {
+  position: absolute;
+  left: 10%;
+  min-height: 3rem;
+  min-width: 15rem;
+  max-width: 30rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  transition: 1s ease;
+  transform: scaleY(0); 
+  transform-origin: top;
+}
+
+nav .dropdown-content a {
+  font-size: 0.8rem;
+}
+
+nav .dropdown-content a i {
+  font-size: 0.8rem;
+}
+
+nav .dropdown-content a:hover,
+nav .dropdown-content a:hover i {
+  color: #973838;
+}
+
+nav .dropdown:hover {
+  color: #973838;
+}
+
+nav .dropdown:hover .dropdown-content {
+  transform: scaleY(1)
+}
