@@ -183,7 +183,7 @@ function restartGame() {
   drawScore = 0;
   scoreU = 0;
   scoreC = 0;
-  count = 10;
+  count = 9;
   
   para.textContent = `New Game`;
   playerScore.textContent = `(0)`;
