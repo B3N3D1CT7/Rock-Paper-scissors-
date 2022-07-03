@@ -51,11 +51,11 @@ function playRound() {
     if (playerSelection === computerSelection) {
       para.textContent = 'Draw';
       para.style.color = 'grey';
-      para1.textContent = `Computer played ${computerSelection}`;
+      para1.textContent = `Computer chose ${computerSelection}`;
     } else if (playerSelection === 'paper' && computerSelection === 'rock') {
       para.textContent = 'You win! Paper beats Rock';
       para.style.color = 'green';
-      para1.textContent = `Computer played ${computerSelection}`;
+      para1.textContent = `Computer chose ${computerSelection}`;
     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
       para.textContent = 'You lose! Rock beats Scissors';
       para.style.color = 'red';
