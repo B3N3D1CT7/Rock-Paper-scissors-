@@ -145,16 +145,6 @@ function setGameOver() {
     winner.style.color = 'grey';
   }
   
-  newGameBtn = document.createElement('button');
-  newGameBtn.setAttribute('class', 'new-game');
-  newGameBtn.textContent = 'New Game';
-  mainGame.appendChild(newGameBtn);
-  
-  newGameBtn.addEventListener('click', () => restartGame());
-}
-
-function restartGame() {
-  
   if (winner.textContent.includes('YOU WIN')) {
     pOverall++;
     playerOverall.textContent = `${userInput.value}: ${pOverall}`;
@@ -167,6 +157,18 @@ function restartGame() {
     drawOverall.textContent = `Draws: ${dOverall}`;
     playerOverall.textContent = `${userInput.value}: ${pOverall}`;
   }
+
+  newGameBtn = document.createElement('button');
+  newGameBtn.setAttribute('class', 'new-game');
+  newGameBtn.textContent = 'New Game';
+  mainGame.appendChild(newGameBtn);
+  
+  newGameBtn.addEventListener('click', () => restartGame());
+}
+
+function restartGame() {
+  
+  
   newGameBtn.parentNode.removeChild(newGameBtn);
   
   rock.disabled = false;
