@@ -96,6 +96,9 @@ section {
   font-size: 1.5rem;
   font-weight: 600;
 }
+.main-game .title {
+  font-size: 1.35rem;
+}
 .title i {
   margin-left: .2rem;
 }
