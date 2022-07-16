@@ -5,164 +5,104 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://kit.fontawesome.com/fffd17f093.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <meta name="author" content="Benedict Umeozor">
+  <title>Rock Paper Scissors</title>
   
-
-  <title>Ben Games</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="gamestyle.css">
+  
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/fffd17f093.js" crossorigin="anonymous"></script>
+  
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
 <body>
-  
-  <section class="body">
-    <header>
-      <div class="logo">
-        <div class="logo-icon"><i class="bi bi-controller"></i></div>
-        <div class="logo-branding">Ben Games</div>
-      </div>
-      <div class="ul-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </header>
-    
-    <main class="main">
+ <header>
+   <div class="container">
+     <h2><span>Ben</span>Coding...</h2>
+     <i id="menu-bar" class="fa solid fa-bars"></i>
+     <nav>
+       <div class="nav-branding">
+         <h2><span class="highlight">Ben</span>Coding...</h2>
+       </div>
+       <span class="other">Other Projects <i class="fa-solid fa-angle-down"></i></span>
+       <div class="projects">
      
-      <div class="title">Rock Paper Scissors  <i class="bi bi-joystick"></i>
-      </div>
-      
-      <div class="button">
-        <button class="start-btn">Initialize Game</button>
-      </div>
-      
-      <div class="user-data">
-        <p>Enter your name</p>
-        <div class="input-field">
-          <input type="text" id="game" placeholder = "Optional">
-          <button class="game-start">Start</button>
-        </div>
-      </div>
-      
-    </main>
-    
-    <section class="game">
-      <div class="title">Rock Paper Scissors<i class="bi bi-joystick"></i></div>
-      
-      <div class="screen">
-        <p class="result"></p>
-        <p class="comp-game">Computer's Choice will be shown here</p>
-        <p class="draw-score">Draws: 0</p>
-        <p class="user-count">Trials left: 10</p>
-        <p class="win-text"></p>
-      </div>
-      
-      <div class="radio">
-        <input type="radio" name="game" id="rock">
-        <input type="radio" name="game" id="paper">
-        <input type="radio" name="game" id="scissors">
-        <input type="radio" name="game" id="rockC" disabled>
-        <input type="radio" name="game" id="paperC" disabled>
-        <input type="radio" name="game" id="scissorsC"disabled>
-      </div>
-      
-      <div class="score-box">
-        
-        <div class="box">
-          <p class="player-name name">Player</p>
-          <P class="player-score score">(0)</P>
-        </div>
-        
-        <div class="vs">
-          vs
-        </div>
-        
-        <div class="box">
-          <p class="name">Computer</p>
-          <p class="computer-score score">(0)</p>
-        </div>
-        
-      </div>
-      
-      <div class="instruction">Select:</div>
-      
-      <div class="play-tools">
-        
-        <div class="tool-box user">
-          <label for="rock">
-            <i class="fa-solid fa-hand-back-fist"></i>
-          </label>
-          <label for="paper">
-            <i class="fa-solid fa-hand"></i>
-          </label>
-          <label for="scissors">
-            <i class="fa-solid fa-hand-scissors"></i>
-          </label>
-        </div>
-        
-        <div class="tool-box computer">
-         <label for="rockC">
-           <i style="color: #933131;" class="fa-solid fa-hand-back-fist"></i>
-         </label>
-         <label for="paperC">
-           <i style="color: #933131;" class="fa-solid fa-hand"></i>
-         </label>
-         <label for="scissorsC">
-           <i style="color: #933131;" class="fa-solid fa-hand-scissors"></i>
-         </label>
-        </div>
-        
-      </div>
-      
-      <div class="play-button">
-        <button class="btn">Play</button>
-      </div>
-      <div class="overall">
-        <p class="title">Overall Scores</p>
-        <div class="overall-main">
-          <p class="p-overall">Player: 0</p>
-          <p class="c-overall">Computer: 0</p>
-          <p class="d-overall">Draws: 0</p>
-        </div>
-      </div>
-    </section>
-    
-    
-  </section>
-  
-  
-  
-  
-  
-  <section class="nav">
-    <nav>
-      <i class="fa-solid fa-x"></i>
-      <ul>
-        <li><button class="dark"><i class="fa-solid fa-sun"></i></button></li>
-        <li class="dropdown">Other Games <i class="fa-solid fa-caret-down"></i>
-         <div class="dropdown-content">
-           <a href="https://ben-guessing-game.netlify.app/">Guess The Number<i class="fa-solid fa-circle-chevron-right"></i></a>
-         </div>
-        </li>
-        <li class="dropdown second">Other Projects <i class="fa-solid fa-caret-down"></i>
-         <div class="dropdown-content">
-           <a href="https://bensio-javascrip-calculator.netlify.app/">JavaScript Calculator<i class="fa-solid fa-circle-chevron-right"></i></a>
-           <a href="https://ben-image-gallery.netlify.app/">Image Gallery<i class="fa-solid fa-circle-chevron-right"></i></a>
-           <a href="https://random-story-generator.netlify.app/">Story Generator<i class="fa-solid fa-circle-chevron-right"></i></a>
-           <a href="https://even-odd-checker.netlify.app/">Even/Odd Checker<i class="fa-solid fa-circle-chevron-right"></i></a>
-           <a href="https://a-team-edu-consult.netlify.app/">A Team Website <i class="fa-solid fa-circle-chevron-right"></i></a>
-         </div>
-        </li>
-      </ul>
-    </nav>
-  </section>
-  
+         <a href="https://a-team-edu-consult.netlify.app/">A Team Website<i class="fa-solid fa-caret-right"></i></a>
+         <a href="https://ben-javascrip-clock.netlify.app/">JavaScript Clock<i class="fa-solid fa-caret-right"></i></a>
+         <a href="https://bensio-javascrip-calculator.netlify.app/">JavaScript Calculator<i class="fa-solid fa-caret-right"></i></a>
+         <a href="https://ben-guessing-game.netlify.app/">Guess the Number<i class="fa-solid fa-caret-right"></i></a>
+         <a href="https://ben-password-generator.netlify.app/">Password Generator<i class="fa-solid fa-caret-right"></i></a>
+       </div>
+     </nav>
+   </div>
+ </header>
+ 
+ <section id="introduction">
+   <div class="introduction">
+     <div class="title">
+       Rock Paper Scissors<i class="bi bi-joystick"></i>
+     </div>
+     <button id="init-btn" type="button">Initialize Game</button>
+     <div class="form">
+       <span>Enter your name:</span>
+       <input type="text" id="user-name" value="Player">
+       <button id="start-btn" type="button">Start</button>
+     </div>
+   </div>
+ </section>
+ 
+ <section id="main-game">
+   <div class="main-game">
+     <div class="title">
+       Rock Paper Scissors <i class="bi bi-joystick"></i>
+     </div>
+     <div class="score-board">
+       <div class="score">
+         <span class="player-name">Player:</span>
+         <span id="player-score">0</span>
+       </div>
+       <div class="score">
+         <span>Draws:</span>
+         <span id="draw-score">0</span>
+       </div>
+       <div class="score">
+         <span>Computer:</span>
+         <span id="computer-score">0</span>
+       </div>
+     </div>
+     <div class="img-result">
+       <div class="main-result">
+         <p class="player-name">Player</p>
+         <img id="player-choice" src="rock.svg">
+         <p>You chose <span class="user-play">Rock</span></p>
+       </div>
+       <div class="main-result">
+         <p>Computer</p>
+         <img id="computer-choice" src="rock.svg">
+         <p>Computer chose <span class="comp-play">Rock</span></p>
+       </div>
+     </div>
+     <div id="result"></div>
+     <div class="select">Select:</div>
+     <div class="options">
+       <img id="rock" src="rock.svg">
+       <img id="paper" src="paper.svg">
+       <img id="scissors" src="scissors.svg">
+     </div>
+     <div class="reset">
+       <button id="reset">Reset</button>
+     </div>
+   </div>
+ </section>
+ <footer>
+   <div class="container">
+     Created by <span>Benedict</span> || &copy; 2022 All Rights Reserved
+   </div>
+ </footer>
+ <!-- JavaScript -->
   <script src="main.js"></script>
-  <script src="game.js"></script>
 </body>
 </html>
